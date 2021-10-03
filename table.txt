@@ -1,0 +1,21 @@
+CREATE TABLE USER(
+	id int(11) Not null AUTO_INCREMENT PRIMARY Key,
+    fullname varchar(100) not null,
+    email varchar(100) not null,
+    username varchar(100) not null,
+   	password varchar(100) not null,
+	code mediumint(50) NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=uft8;
+
+CREATE TABLE tbl_person (
+ id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username varchar(100) NOT NULL,
+    bio varchar(100) NOT NULL,
+    website varchar(100) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=uft8;
+
+CREATE TABLE tbl_file (
+ id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    image varchar(250) NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=uft8;
